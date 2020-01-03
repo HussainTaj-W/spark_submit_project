@@ -358,7 +358,7 @@ class Requirements:
             temp_file_names = Requirements._get_file_paths_list(paths.include_assets_dir)
 
         elif not paths.include_assets_dir == '':
-            logging.warning(f"Include Assets Directory '{paths.include_dir}' does not exist.")
+            logging.warning(f"Include Assets Directory '{paths.include_assets_dir}' does not exist.")
 
         if os.path.isfile(paths.include_assets_file):
             temp_file_names.extend(Requirements._extract_lines(paths.include_assets_file))
