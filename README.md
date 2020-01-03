@@ -59,10 +59,14 @@ SSP needs to know what you want to submit with `spark-submit` and what not to. F
 
 > Paths are relative to the present working directory of the shell where the script is run. 
 
-[1] This directory should only be used by SSP. Do not copy your files into it.
-[2] The top-level files are included directly. Whereas top-level directories are archived (zip) and then included in the list of files to send with `spark-submit`.
-[3]  Paths must not be directories,
-[4] zip files are sent as the --archives arg, while other files are sent as --files arg. You can send all files as --files by changing the [configuration file](#configuration).
+
+<sup>[1]</sup> This directory should only be used by SSP. Do not copy your files into it.
+
+<sup>[2]</sup> The top-level files are included directly. Whereas top-level directories are archived (zip) and then included in the list of files to send with `spark-submit`.
+
+<sup>[3]</sup>  Paths must not be directories,
+
+<sup>[4]</sup> zip files are sent as the --archives arg, while other files are sent as --files arg. You can send all files as --files by changing the [configuration file](#configuration).
 
 NOTE: Files from all these locations and directories (as zip archives) will be placed on the working directory of the executors after spark-submit. This means you can import/access files without manually adding the directories to the path.
 
