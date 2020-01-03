@@ -1,0 +1,1 @@
+print("\nmy_module imported successfully\n")
