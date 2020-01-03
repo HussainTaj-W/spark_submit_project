@@ -43,6 +43,8 @@ SSP needs to know what you want to submit with `spark-submit` and what not to. F
 
 *Default values assume your project folder as the working directory.*
 *To change defaults, look at the [configuration section](#configuration).*
+
+
 | Item                     | Description                                                                                                                                                  | Default                    |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------- |
 | Requirements File        | Contains package names. One per line. See [this link](https://pip.readthedocs.io/en/1.1/requirements.html#the-requirements-file-format) for details.         | requirements.txt           |
@@ -53,6 +55,7 @@ SSP needs to know what you want to submit with `spark-submit` and what not to. F
 | Include Code Directory   | <sup>[2]</sup>A directory whose files and directories are submitted as --py-files arg.                                                                       | None                       |
 | Include Assets File      | <sup>[3][4]</sup>A file where each line is a file path of a non-code related file.                                                                           | None                       |
 | Include Assets Directory | <sup>[2][4]</sup>A directory containing none code files and directories .                                                                                    | None                       |
+
 
 > Paths are relative to the present working directory of the shell where the script is run. 
 
