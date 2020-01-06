@@ -14,11 +14,21 @@ There are many alternatives out there but for small scale development, those can
 		 - [PATHS](#paths)
 		 - [LOGGING](#logging)
 		 - [OPTIONS](#options)
+ - [Examples](#examples)
 
 # Install
 
+**Method 1**
+
 1. Create a folder. This is your project folder.
 2. Copy the contents of [`dist/linux/`](./dist/linux/) or [`dist/windows/`](./dist/windows/) to your project folder, according to your OS.
+
+**Method 2**
+
+1. Download the folder [`dist/linux/`](./dist/linux/) or [`dist/windows/`](./dist/windows/), accordind to your OS.
+2. Create an environment variable `SSP_HOME_DIR` that has the path of the downloaded folder.
+3. Also add the path of the downloaded folder to your `PATH` environment variable.
+4. Now you can run `ssp` or `ssp.sh` from anywhere in a terminal. `ssp init` or `ssp.sh init` can be run to make your current directory, your project folder.
 
 > Requires python>=3.6 and pip
 > If you do not wish to change your environment's python version, look at the [configuration section](#configuration) to learn how to define what python SSP uses.
@@ -91,3 +101,6 @@ The 'Level' is an integer. See [this link](https://docs.python.org/3/library/log
 ### OPTIONS
 Here you set whether you want to use the `--archives` option.
 If you prefer to not use this option, then assets' zip files will be sent as `--files` args.
+
+# Examples
+Find examples in the [example](./example) folder.
